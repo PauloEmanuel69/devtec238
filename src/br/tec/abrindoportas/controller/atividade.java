@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class atividade {
 	public void atividade() {
 			// Bloco - Declaração de Variáveis
-			String nome, sexo, pais;
+			String nome, pais;
 			int maioridade, idade;
 			Scanner read = new Scanner(System.in);
 
@@ -13,7 +13,7 @@ public class atividade {
 			System.out.println("Digite seu nome: ");
 			nome = read.next();
 			System.out.println("Digite seu gênero (M/F): ");
-			sexo = read.next();
+                        read.next();
 			System.out.println("Digite seu pais: ");
 			pais = read.next();
 
