@@ -1,8 +1,8 @@
-package br.tec.abrindoportas.controller;
+package AtividadesRealizadas;
 
 import java.util.Scanner;
 
-public class atividade {
+public class AtividadeA {
 	public void atividade() {
 			// Bloco - Declaração de Variáveis
 			String nome, pais;

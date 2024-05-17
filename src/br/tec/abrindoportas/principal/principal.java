@@ -23,7 +23,7 @@ public class principal {
 		
 		//VideoLocadora func2 = new VideoLocadora();
 		//func2.locar(); 
-		
-	
-	}  
-}}
+		 
+			}
+	}
+}

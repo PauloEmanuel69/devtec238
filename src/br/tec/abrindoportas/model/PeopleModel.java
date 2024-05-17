@@ -1,5 +1,7 @@
 package br.tec.abrindoportas.model;
 
+import javax.swing.JOptionPane;
+
 public class PeopleModel {
 
 	String fistname;
@@ -7,7 +9,7 @@ public class PeopleModel {
     String cpf;
 	int idade;
 	String endereco;
-	double salario;
+	private String firstName;
 	
 	public PeopleModel() {
 		super();
@@ -21,7 +23,7 @@ public class PeopleModel {
 		this.cpf = cpf;
 		this.idade = idade;
 		this.endereco = endereco; 
-		this.salario = salario;
+		
 	}
 
 	public String getFistname() {
@@ -61,23 +63,25 @@ public class PeopleModel {
 	}
 
 	public void setEndereco(String endereco) {
-		this.endereco = endereco;
+		this.endereco = endereco; 
+	}	
+		public void tipoPeople() {
+			JOptionPane.showMessageDialog(null, this.firstName + " Você é um tipo de pessoas obesa.");
+			System.out.println();
+		
+	}
+
+	@Override
+	public String toString() {
+		return "PeopleModel [fistname=" + fistname + ", lasteName=" + lasteName + ", cpf=" + cpf + ", idade=" + idade
+				+ ", endereco=" + endereco + "]";
 	}		
-			public double getSalario() {
-				return salario; 
-			}			
-				public void setSalario(double string) {
-					this.salario = string; 
+			
+			
 		}
 
-				@Override
-				public String toString() {
-					return "People [fistname=" + fistname + ", lasteName=" + lasteName + ", cpf=" + cpf + ", idade="
-							+ idade + ", endereco=" + endereco + ", salario=" + salario + "]";
-				}
 
 
-}
 	
 	
 	
